@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/700e1840ca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="logo.png" alt="logo image"></a>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+    <!-- contact-us -->
+
+    <section class="location">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243647.3169819341!2d78.26795913240726!3d17.412299801362526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1640454879282!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fas fa-home"></i>
+                    <span>
+                        <h5>ASD Road, ZXC Building</h5>
+                        <p>Hyderabad, Telangana</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-phone"></i>
+                    <span>
+                        <h5>+91 9121329884</h5>
+                        <p>Monday to Saturday, 10 A.M to 6 P.M</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <span>
+                        <h5>cnikhil2010@gmail.com</h5>
+                        <p>Email your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" id="" placeholder="Enter Your Name" required>
+                    <input type="email" name="email" id="" placeholder="Enter E-mail address" required>
+                    <input type="text" name="" id="subject" placeholder="Enter Your Subject" required>
+                    <textarea rows="8" placeholder="message" required></textarea>
+                    <button type="submit" class="hero-btn abt-btn">Send Message</button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatem officiis ipsum at fugiat voluptates incidunt, illo <br> impedit eum magnam optio ea quaerat? Natus, necessitatibus in ut esse consequatur asperiores.</p>
+        <div class="icons">
+            <i class="fab fa-facebook-f fa-lg"></i>
+            <i class="fab fa-instagram fa-lg"></i>
+            <i class="fab fa-twitter fa-lg"></i>
+            <i class="fab fa-linkedin-in fa-lg"></i>
+        </div>
+    </section>
+
+    <!-- Javascript for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("nav-links");
+        function showMenu() {
+            navLinks.style.right = "0px"
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px"
+        }
+    </script>
+</body>
+</html>

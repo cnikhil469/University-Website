@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/700e1840ca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="logo.png" alt="logo image"></a>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Certificates & Online Programs For 2021</h1>
+    </section>
+
+    <!-- Blocg page content -->
+    
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="certificate.jpg" alt="">
+                <h2>Our Certificates & Online Programs For 2021</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus saepe sint, enim alias commodi repellendus! Error, natus laboriosam nemo at ex enim quam sed dolorem tenetur debitis sapiente voluptatum veritatis.There are many reasons to start a blog for personal use and only a handful of strong ones for business blogging. Blogging for business, projects, or anything else that might bring you money has a very straightforward purpose – to rank your website higher in Google SERPs, a.k.a. increase your visibility.</p>
+                <br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae pariatur magnam tempore, quaerat voluptas tenetur nemo possimus consequatur natus quia nulla similique voluptatibus nisi aliquam. Maxime aliquam obcaecati placeat veniam.As a business, you rely on consumers to keep buying your products and services. As a new business, you rely on blogging to help you get to potential consumers and grab their attention. Without blogging, your website would remain invisible, whereas running a blog makes you searchable and competitive.The more frequent and better your blog posts are, the higher the chances for your website to get discovered and visited by your target audience. This means that a blog is an effective lead generation tool. Add a great call to action (CTA) to your content, and it will convert your website traffic into high-quality leads. A blog also allows you to showcase your niche authority and build a brand.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, repellat aut doloremque facere expedita sint odit animi temporibus porro aliquid eius facilis sequi unde dolorum? Saepe error doloribus illum velit.When you use your niche knowledge for creating informative and engaging posts, it builds trust with your audience. Great blogging makes your business look more credible, which is especially important if your brand is still young and fairly unknown. It ensures presence online and niche authority at the same time.</p>
+
+
+                <div class="comment-box">
+                    <h2>Leave a Comment</h2>
+                    <form action="" class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter E-mail">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Enter your comment"></textarea>
+                        <button type="submit" class="hero-btn abt-btn">Post Your Comment</button>
+                    </form>
+                </div>
+
+            </div>
+            <div class="blog-right">
+                <h2>Post Categories</h2>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Blockchain</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Artificial Intelligence</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Frontend Developer</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Backend Developer</span>
+                    <span>21</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatem officiis ipsum at fugiat voluptates incidunt, illo <br> impedit eum magnam optio ea quaerat? Natus, necessitatibus in ut esse consequatur asperiores.</p>
+        <div class="icons">
+            <i class="fab fa-facebook-f fa-lg"></i>
+            <i class="fab fa-instagram fa-lg"></i>
+            <i class="fab fa-twitter fa-lg"></i>
+            <i class="fab fa-linkedin-in fa-lg"></i>
+        </div>
+    </section>
+
+    <!-- Javascript for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("nav-links");
+        function showMenu() {
+            navLinks.style.right = "0px"
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px"
+        }
+    </script>
+</body>
+</html>
